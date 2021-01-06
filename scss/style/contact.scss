@@ -1,0 +1,146 @@
+@import '../assets/variables';
+@import '../assets/animations';
+
+#section4{
+	height: 100vh;
+	color: $gris;
+	font-size: 1.3em;
+	content{
+		padding: 5vh 0;
+		text-align: center;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.b{
+			font-weight: bold;
+			color: $txt-noir;
+		}
+		.d-col-wrapper{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			overflow: hidden;
+			.col{
+				width: 40%;
+			}
+			.gauche{
+				color: $txt-noir;
+				text-align: right;
+				padding: 0 30px 0 0;
+				letter-spacing: 0.5px;
+			}
+			.droite{
+				text-align: left;
+				white-space: pre;
+			}
+		}
+		.cv{
+			.cv-btn{
+				display: inline-block;
+				font-size: $logo-taille;
+				padding: 45px 0;
+				text-decoration: none;
+				cursor: pointer;
+				color: $txt-noir;
+				
+				@extend %no-select;
+				
+				i{
+				}
+			}
+		}
+		.nav-social{
+			.nav-item{
+				justify-content: center;
+				margin: 0 7px;
+				width: $btn-size;
+				padding: 0;
+				i{
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+	.stripe{
+		position: absolute;
+		height: 20vh;
+		width: 0px;
+		right: 0;
+		background: white;
+	}
+	.s1{top: 0;}.s2{top:20vh;}.s3{top:40vh;}.s4{top:60vh;}.s5{top:80vh;}
+}
+@media only screen and (min-width:600px){
+	#section4{
+		content{
+			.titre-wrapper{
+				.titre{
+				}
+			}
+			.d-col-wrapper{
+				display: flex;
+				justify-content: center;
+				.col{
+
+				}
+				.gauche{
+				}
+				.droite{
+				}
+			}
+			.m-col-wrapper{
+				display: none;
+			}
+
+			.cv{
+				.cv-icon{
+					font-size: $logo-taille;
+				}
+			}
+			.nav-social{
+				.nav-item{
+					i{
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@media only screen and (min-width:800px){
+	#section4{
+		content{
+			.titre-wrapper{
+				.titre{
+				}
+			}
+			.d-col-wrapper{
+				.col{
+				}
+				.gauche{
+				}
+				.droite{
+				}
+			}
+			.m-col-wrapper{
+			}
+
+			.cv{
+				.cv-icon{
+				}
+			}
+			.nav-social{
+				.nav-item{ 
+					width: $btn-size;
+					margin: 0 7px;
+					i{
+					}
+				}
+			}
+		}
+
+	}
+
+}

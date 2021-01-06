@@ -1,0 +1,96 @@
+/*----------COULEURS-------------*/
+/*----------Desktop-----------*/
+/*----------Mobile-----------*/
+#section4 content .cv .cv-btn {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none; }
+
+@keyframes photo-profil {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+@keyframes contenu-translate {
+  0% {
+    transform: translateY(300px); }
+  15% {
+    transform: translateY(300px); }
+  100% {
+    transform: translateY(0px); } }
+#section4 {
+  height: 100vh;
+  color: #5d636e;
+  font-size: 1.3em; }
+  #section4 content {
+    padding: 5vh 0;
+    text-align: center;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    #section4 content .b {
+      font-weight: bold;
+      color: #39404d; }
+    #section4 content .d-col-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      overflow: hidden; }
+      #section4 content .d-col-wrapper .col {
+        width: 40%; }
+      #section4 content .d-col-wrapper .gauche {
+        color: #39404d;
+        text-align: right;
+        padding: 0 30px 0 0;
+        letter-spacing: 0.5px; }
+      #section4 content .d-col-wrapper .droite {
+        text-align: left;
+        white-space: pre; }
+    #section4 content .cv .cv-btn {
+      display: inline-block;
+      font-size: 70px;
+      padding: 45px 0;
+      text-decoration: none;
+      cursor: pointer;
+      color: #39404d; }
+    #section4 content .nav-social .nav-item {
+      justify-content: center;
+      margin: 0 7px;
+      width: 44px;
+      padding: 0; }
+      #section4 content .nav-social .nav-item i {
+        vertical-align: middle; }
+  #section4 .stripe {
+    position: absolute;
+    height: 20vh;
+    width: 0px;
+    right: 0;
+    background: white; }
+  #section4 .s1 {
+    top: 0; }
+  #section4 .s2 {
+    top: 20vh; }
+  #section4 .s3 {
+    top: 40vh; }
+  #section4 .s4 {
+    top: 60vh; }
+  #section4 .s5 {
+    top: 80vh; }
+
+@media only screen and (min-width: 600px) {
+  #section4 content .d-col-wrapper {
+    display: flex;
+    justify-content: center; }
+  #section4 content .m-col-wrapper {
+    display: none; }
+  #section4 content .cv .cv-icon {
+    font-size: 70px; } }
+@media only screen and (min-width: 800px) {
+  #section4 content .nav-social .nav-item {
+    width: 44px;
+    margin: 0 7px; } }
+
+/*# sourceMappingURL=contact.css.map */

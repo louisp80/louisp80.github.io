@@ -1,0 +1,4 @@
+1. Écrire profil
+2. Updater CV
+3. Animations profil
+4. Responsive

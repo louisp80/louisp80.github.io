@@ -1,0 +1,173 @@
+@import '../assets/variables';
+@import '../assets/animations';
+
+#section1{
+
+	background-color: none;
+	font-size: $s-font-size;
+	padding: 0;
+	height: 100vh;
+
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	header{
+		width: 100%;
+		height: $logo-taille;
+		padding: 5px 0 0 0;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		span{
+			font-size: $logo-taille;
+			color: $bleu;
+		}
+	}
+	nav{
+		color: $noir;
+		font-weight: 700;
+
+	}
+	.anchor-link{
+		display: inline-block;
+		text-decoration: none;
+		position: relative;
+		float: left;
+
+		margin: 0 12px;
+		padding: 0 0 6px 0;
+
+		font-family: 'Fugaz One', Arial, Sans-Serif;
+		font-size: $btn-font;
+		text-align: center;
+		cursor: pointer;
+
+		color: $btn-color;
+
+		@extend %no-select;
+	}
+	.anchor-link::after{
+		content: " ";
+		position: absolute;
+		width: 20%;
+		height: 6px;
+		border-radius: 3px;
+		top: 100%;
+		left: 40%;
+		background: $bleu;
+		opacity: 0;
+		transition: left 0.3s, width 0.3s, opacity 0.2s, color 0.3s;
+	}
+	.anchor-link:hover::after{
+		width: 60%;
+		left: 20%;
+		opacity: 1;
+		transition: left 0.3s, width 0.3s, opacity 0.2s;
+		z-index: 0;
+
+	}
+	.anchor-link:hover{
+		color: $btn-color-hover;
+		transition: color 0.3s;
+	}
+	.nav-site{
+		
+	}
+	.nav-social{
+		display: none;
+		.nav-item{
+			float: right;
+		}
+	}
+
+	.contenu{
+		padding: 5% 0;
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		.presentation{
+			font-family: 'Fugaz One', Arial, Sans-Serif;
+			font-weight: 400;
+			color: $noir;
+			font-size: $titre-taille*0.4;
+		}
+		.nom{
+			color: $noir;
+			font-size: $titre-taille*1.1;
+			font-weight: bold;
+		}
+		.bienvenue{ 
+			color: $gris;
+			margin: 10px 0 25px 0;
+			font-size: 18px;
+		}
+		.btn{
+			margin: 10px 0;
+			display: flex;
+			width: 240px;
+			align-self: center;
+		}
+
+	}
+}
+@media only screen and (min-width:900px){
+
+#section1{
+
+	header{
+		justify-content: center;
+		span{
+			width: 33%;
+		}
+	}
+	nav{
+		width: 33%;
+	}
+	.anchor-link{
+	}
+	.anchor-link::after{
+	}
+	.anchor-link:hover::after{
+	}
+	.anchor-link:hover{
+	}
+	.nav-site{
+		
+	}
+	.nav-social{
+		display: block;
+		.nav-item{
+		}
+	}
+	.contenu{
+		width: 70%;
+		display: block;
+		.presentation{
+			font-size: $titre-taille*0.5;
+		}
+		.nom{
+			font-size: $titre-taille*1.4;
+		}
+		.bienvenue{
+		}
+		.btn{
+			display: inline-flex;
+			margin: 0 15px;
+		}
+
+	}
+}
+
+}@media only screen and (min-width:1090px){
+
+	#section1{
+		.contenu{
+			width: 50%;
+		}
+	}
+
+}

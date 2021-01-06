@@ -1,0 +1,95 @@
+@import '../assets/variables';
+@import '../assets/animations';
+
+body{
+	font-size: $m-font-size;
+  position: relative;
+  overflow-x: hidden;
+}
+.background-img{
+	content: ' ';
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+  left: 0;
+  background: url('../medias/images/background/splashscreen2.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.25;
+
+}
+section{
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+
+}
+#section1, #section2, #section3, #section4{
+	
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Fugaz One', Arial, Sans-Serif;
+	font-weight: 400;
+	color: $txt-noir;
+}
+h1{
+		font-size: $titre-taille;
+}
+
+
+.btn{
+	display: inline-flex;
+	text-decoration: none;
+	position: relative;
+	border-radius: $btn-radius;
+	border: 3px solid $bleu;
+	
+	height: $btn-size;
+	padding: 0 15px;
+
+	font-family: 'Fugaz One', Arial, Sans-Serif;
+	font-size: $font-size;
+
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+
+	color: $blanc; 
+	background: $bleu;
+
+	@extend %no-select;
+}
+.btn:hover{
+	background: none;
+	color: $bleu;
+
+	transition: background 0.2s, color 0.2s;
+}
+.projets-fond{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 50vw;
+	top: 50vh;
+	border-radius: 5px;
+	background: $bleu;
+	opacity: 0;
+}
+@media only screen and (min-width:900px){
+
+	body{
+		overflow: hidden;
+
+		section{
+			position: absolute;
+			height: 100vh;
+			top: 0;
+			left: 0;
+			overflow-y: hidden;
+			z-index: 0;
+		}
+	}
+
+}

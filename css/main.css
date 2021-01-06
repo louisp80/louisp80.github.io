@@ -1,0 +1,95 @@
+/*----------COULEURS-------------*/
+/*----------Desktop-----------*/
+/*----------Mobile-----------*/
+.btn {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none; }
+
+@keyframes photo-profil {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+@keyframes contenu-translate {
+  0% {
+    transform: translateY(300px); }
+  15% {
+    transform: translateY(300px); }
+  100% {
+    transform: translateY(0px); } }
+body {
+  font-size: 16px;
+  position: relative;
+  overflow-x: hidden; }
+
+.background-img {
+  content: ' ';
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: url("../medias/images/background/splashscreen2.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.25; }
+
+section {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Fugaz One', Arial, Sans-Serif;
+  font-weight: 400;
+  color: #39404d; }
+
+h1 {
+  font-size: 57px; }
+
+.btn {
+  display: inline-flex;
+  text-decoration: none;
+  position: relative;
+  border-radius: 23px;
+  border: 3px solid #2470E9;
+  height: 44px;
+  padding: 0 15px;
+  font-family: 'Fugaz One', Arial, Sans-Serif;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: #2470E9; }
+
+.btn:hover {
+  background: none;
+  color: #2470E9;
+  transition: background 0.2s, color 0.2s; }
+
+.projets-fond {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 50vw;
+  top: 50vh;
+  border-radius: 5px;
+  background: #2470E9;
+  opacity: 0; }
+
+@media only screen and (min-width: 900px) {
+  body {
+    overflow: hidden; }
+    body section {
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      overflow-y: hidden;
+      z-index: 0; } }
+
+/*# sourceMappingURL=main.css.map */

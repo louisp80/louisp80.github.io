@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ScrollTest</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./medias/louisfont/icons.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/profil.css">
+	<link rel="stylesheet" type="text/css" href="./css/projets.css">
+	<link rel="stylesheet" type="text/css" href="./css/contact.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Cambay:400,700|Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="background-img"></div>
+	<section id="section1">
+
+		<header>
+			<nav class="nav-site">
+				<a class="nav-item anchor-link" onclick="skipToProfileMobile(event)">
+					Profil
+				</a>	
+				<a class="nav-item anchor-link" onclick="skipToContactMobile()">
+					Projets
+				</a>
+				<a class="nav-item anchor-link" onclick="skipToContactMobile()">
+					Contact
+				</a>
+			</nav>
+
+			<span class='ci-logolp-thick'></span>
+
+			<nav class="nav-social">	
+				<a class="nav-item anchor-link" href="https://github.com/louisp80" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+				<a class="nav-item anchor-link" href="https://www.linkedin.com/in/louispoirier-14/" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+			</nav>
+		</header>
+		
+		<div class="contenu" id="splashContenu">
+			<span class="presentation">
+				Bonjour! Je m'appelle
+			</span>
+			<h1 class="nom">
+				Louis Poirier
+			</h1>
+			<p class="bienvenue">
+					Bienvenue sur mon site! Je suis aspirant développeur front-end et je me passionne pour la création d’applications interactives de toutes sortes.
+			</p>
+			<a class="btn" onclick="skipToContactMobile()">Entrer en contact</a>
+			<a class="btn" onclick="skipToProjectsMobile()">Voir mes projets</a>
+		</div>
+
+		<p></p>
+	</section>
+	<section id="section2">
+		<content id="profilContenu">
+			<div class="about p-item">
+				<h2>Un mot à propos de moi</h2>
+				<p class="p-desc">Je suis un humain passioné qui souhaite faire carrière dans l'industrie du web. Avide de connaissances, je ne cesse jamais d'apprendre et de me perfectionner. Mon optimisme naturel me permet de trouver des solutions aux défis que la vie me présente, ce qui transparaît dans la façon dont je travaille.</p>
+			</div>
+			<div class="photo-profil"></div>
+			<div class="technologies p-item">
+				<h2>Technologies</h2>
+				<div class="p-desc">
+					<div class="tech-col">
+						
+						- HTML<br>
+						- CSS / Sass <br>
+						- Javascript <br>
+						- GSAP <br>
+						- Vue / Angular <br>
+						- Firebase
+						
+					</div>
+					<div class="tech-col">
+						- MongoDB <br>
+						- Express.js <br>
+						- Pug <br>
+						- Java <br>
+						- C# <br>
+						- GitHub / Git Bash
+						
+					</div>
+				</div>
+			</div>
+			<div class="formation p-item">
+				<h2>Formation</h2>
+				<p class="p-desc">
+					<h4>Diplômes</h4>
+					
+					<b>Technique d'intégration multimédia</b> — Collège de Maisonneuve, 2015
+
+					<h4>Crédits cumulés</h4>
+
+					<b>Génie logiciel</b> — ÉTS, 2016 - 2018
+					<br>
+					<b>Enseignement du français</b> — UDEM, 2015
+
+					<h4>Stages</h4>
+
+					<b>Conception d'une application de RV</b> — Centre international de criminologie comparée, 2017
+					<br>
+					<b>Intégrateur de contenus</b> — Ellicom, 2015
+				</p>
+			</div>
+			<div class="competences p-item">
+				<h2>Compétences</h2>
+				<p class="p-desc">
+					<b>Capacité d'apprentissage</b> — Les habiletés s'apprennent, mais la personnalité est intrinsèque. Jamais satisfait, je cherche constemment à évoluer en tant qu'individu et travailleur.
+					<br>
+					<b>Résolution de problèmes</b> — Les défis sont ce qui me permet de m'épanouir. J'ai une vision axée sur les solutions.
+					<br>
+					<b>Polyvalence</b> — J'ai acquis lors de mes expériences hétérogènes un baggage d'outils et de connaissances qui me donnent une perspective <i>Out of the Box</i>.
+				</p>
+			</div>
+		</content>
+	</section>
+	<section id="section3">
+		<content>
+			<h1 class="projets-titre">Mes projets</h1>
+			<div class="slideshow-btn btn-left" onclick="scrollProjects(-1)">
+				<i class="fas fa-angle-left"></i>
+			</div>
+			<div class="projets-view" id="projectsView">
+				<div class="projet">
+					<div class="img-projet i1">
+					</div>
+					<div class="col">
+						<div class="p-desc">
+							<h3 class="s-titre">
+								monAgenda
+							</h3>
+							<div class="projet-txt">
+								<p>Il s'agit d'une application de bureau servant à planifier son quotidien. Elle est composée d'un calendrier qui permet d'insérer des tâches pour chaque jour, ainsi qu'un tableau de notes pour des citations, des aides-mémoires et autres courts-textes selon les désirs de l'utilisateur.</p>
+							</div>
+						</div>
+						<div class="p-fonc">
+							<h4>Fonctionnalités</h4>
+							<ul>
+								<li>- Création d'un nouvel utilisateur et connection</li>
+								<li>- Créer, modifier et effacer une note</li>
+								<li>- Créer une tâche</li>
+								<li>- Modifier le contenu ou l'heure d'une tâche (appuyer sur la disquette pour enregistrer les modifications)</li>
+								<li>- Retirer une tâche (effacer le contenu d'une tâche et enregistrer les modifications)</li>
+								<li>- Afficher l'horaire de différentes journées (sélectionner une date dans le calendrier)</li>
+							</ul>
+						</div>
+						<div class="p-tech">
+							<h4>Technologies utilisées</h4>
+							<ul>
+								<li>- HTML</li>
+								<li>- CSS / SASS</li>
+								<li>- JavaScript</li>
+								<li>- ExpressJs /<br>NodeJs</li>
+							</ul>
+							<ul>
+								<li>- Pug</li>
+								<li>- AJAX</li>
+								<li>- MongoDB /<br>Mongoose</li>
+								<li>- Heroku</li>
+							</ul>
+
+						</div>
+						
+						<a class="btn" href="https://mon-agenda.herokuapp.com/dashboard" target="_blank">
+							Visiter le site
+						</a>
+					</div>
+				</div>
+				<div class="projet">
+					<div class="img-projet i2">
+						<div class="img-mask"></div>
+					</div>
+					<div class="col">
+						<div class="p-desc">
+							<h3 class="s-titre">
+								Yssa clothing store
+							</h3>
+							<div class="projet-txt">
+								<p>Yssa est une fausse boutique de vêtements en ligne. Elle permet de naviguer le catalgue, faire une recherche à l'aide de mots-clés, ajouter des articles au panier et se connecter en tant qu'administrateur pour faire des modifications au contenu du catalogue.</p>
+							</div>
+						</div>
+						<div class="p-fonc">
+							<h4>Fonctionnalités</h4>
+							<ul>
+								<li>- Choisir la taille et la quantité d'un article afin de l'ajouter au panier</li>
+								<li>- Rechercher des articles à l'aide de mots-clés</li>
+								<li>- Modifier la quantité d'articles dans le panier. La facture sera mise à jour en temps réel</li>
+								<li>- Se connecter en tant qu'administrateur</li>
+								<li>- Modifier le nom et le prix d'un article du catalogue</li>
+								<li>- Ajouter un article au catalogue</li>
+								<li>- Retirer un article du catalogue</li>
+							</ul>
+						</div>
+						<div class="p-tech">
+							<h4>Technologies utilisées</h4>
+							<ul>
+								<li>- HTML</li>
+								<li>- CSS / SASS</li>
+								<li>- Angular 5</li>
+								<li>- TypeScript</li>
+							</ul>
+						</div>
+						<a class="btn" href="http://yssamock.store/" target="_blank">
+							Visiter le site
+						</a>
+					</div>
+				</div>
+				<div class="projet">
+					<div class="img-projet i3">
+						<div class="img-mask"></div>
+					</div>
+					<div class="col">
+						<div class="p-desc">
+							<h3 class="s-titre">
+								Simulateur de lotterie NHL
+							</h3>
+							<div class="projet-txt">
+								<p>Dans le cadre d'une ligue de hockey simulée à laquelle j'ai participé, j'ai voulu que nous puissions effectuer notre propre lotterie du repêchage, plutôt que d'utiliser les résultats de la LNH. Cette lotterie fonctionne selon les mêmes règles.</p>
+							</div>
+						</div>
+						<div class="p-fonc">
+							<h4>Fonctionnement</h4>
+							<p>À la fin d'une saison de la SHL, les équipes ayant le moins bien repêché obtiennent de meilleures probabilités de choisir dans le top 3 en vue du prochain repêchage. Cette application effectue le tirage au sort en dévoilant les trois premières positions de manière successive. Il est de plus possible d'enregistrer le résultat final dans un fichier .txt.</p>
+						</div>
+						<div class="p-tech">
+							<h4>Technologies utilisées</h4>
+							<ul>
+								<li>- HTML</li>
+								<li>- CSS</li>
+								<li>- Javascript</li>
+								<li>- GitHub pages</li>
+							</ul>
+						</div>
+						<a class="btn" href="https://louisp80.github.io/repechageSHL/" target="_blank">
+							Visiter le site
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="slideshow-btn btn-right" onclick="scrollProjects(1)">
+				<i class="fas fa-angle-right"></i>
+			</div>
+			<div class="page-counter">
+				<div class="dot activeDot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+		</content>
+	</section>
+	<section id="section4">
+		
+		<div class="stripe s1"></div>
+		<div class="stripe s2"></div>
+		<div class="stripe s3"></div>
+		<div class="stripe s4"></div>
+		<div class="stripe s5"></div>
+
+		<content>
+			<h1 class='cai'>Contact</h1>
+			<div class="cai d-col-wrapper">
+				<div class="col gauche b">
+					Résidence: <br>
+					Téléphone: <br>
+					Courriel: <br>
+				</div>
+				<div class="col droite">Montréal, Québec <br>514   918 - 8276 <br>louis.poirier.14@gmail.ca<br>
+				</div>
+			</div>
+
+			<div class="cai cv">
+				Télécharger mon CV :<br>
+				<a class="cv-btn" href="./medias/downloads/CV_Web.pdf" download>
+					<i class='ci-cv'></i>					
+				</a>
+			</div>
+			<div class="cai nav-social">	
+				<a class="nav-item btn" href="https://github.com/louisp80" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+				<a class="nav-item btn" href="https://www.linkedin.com/in/louispoirier-14/" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+			</div>
+		</content>
+	</section>	
+	
+	<div class="projets-fond"></div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/ScrollToPlugin.min.js" defer></script>
+	<script src="./js/main.js" defer></script>
+	<script src="./js/projets.js" defer></script>
+</body>
+</html>
