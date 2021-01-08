@@ -91,7 +91,7 @@
       font-size: 22.8px; }
     #section1 .contenu .nom {
       color: #17181a;
-      font-size: 62.7px;
+      font-size: 51.3px;
       font-weight: bold; }
     #section1 .contenu .bienvenue {
       color: #5d636e;
@@ -103,6 +103,9 @@
       width: 240px;
       align-self: center; }
 
+@media only screen and (min-width: 500px) {
+  #section1 .contenu .nom {
+    font-size: 62.7px; } }
 @media only screen and (min-width: 900px) {
   #section1 header {
     justify-content: center; }

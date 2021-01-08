@@ -97,7 +97,7 @@
 		}
 		.nom{
 			color: $noir;
-			font-size: $titre-taille*1.1;
+			font-size: $titre-taille*0.9;
 			font-weight: bold;
 		}
 		.bienvenue{ 
@@ -112,6 +112,15 @@
 			align-self: center;
 		}
 
+	}
+}
+@media only screen and (min-width:500px){
+	#section1{
+		.contenu{
+			.nom{
+				font-size: $titre-taille*1.1;
+			}
+		}
 	}
 }
 @media only screen and (min-width:900px){
