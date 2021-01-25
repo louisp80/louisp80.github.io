@@ -17,7 +17,7 @@ onReady(function () {
 	projetsView = document.getElementsByClassName('projets-view')[0];
 
 
-	gsap.ticker.lagSmoothing(10, 2);
+	//gsap.ticker.lagSmoothing(10, 2);
 
 	screenSizeTest();
 	window.addEventListener("resize", screenSizeTest);
