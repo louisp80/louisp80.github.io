@@ -27,7 +27,7 @@
       position: relative;
       display: inline-block;
       margin: 20px 0 30px 0;
-      padding: 0 0 8px 0; }
+      padding: 0 0 5px 0; }
     #section2 content h2::before {
       content: " ";
       position: absolute;
@@ -70,7 +70,7 @@
   #section2 content {
     width: 100%;
     margin: auto;
-    padding: 3vh;
+    padding: 2vh;
     height: 100%;
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -78,9 +78,12 @@
     justify-items: center;
     align-items: start; }
     #section2 content h2 {
-      margin: 12px 0 20px 0; }
+      margin: 6px 0 10px 0;
+      padding: 0; }
+    #section2 content h4 {
+      margin: 0; }
     #section2 content .p-item {
-      font-size: 18px;
+      font-size: 17px;
       max-width: 600px;
       margin: 0px; }
     #section2 content .about {
@@ -105,27 +108,44 @@
 @media only screen and (min-width: 1280px) {
   #section2 content {
     max-width: 1450px;
-    grid-template-rows: 5fr 6fr;
+    grid-template-rows: 5fr 10fr;
     grid-template-columns: 3fr 2fr 3fr; }
     #section2 content .p-item {
-      font-size: 19.2px;
       max-width: 600px; }
     #section2 content .about {
       grid-column: 1 / 2;
       grid-row: 1 / 2; }
     #section2 content .formation {
       grid-column: 1 / 2;
-      grid-row: 2 / 3; }
+      grid-row: 2 / 3;
+      position: relative;
+      top: -70px; }
     #section2 content .competences {
       grid-column: 3 / 4;
       grid-row: 1 / 2; }
     #section2 content .technologies {
       grid-column: 3 / 4;
-      grid-row: 2 / 3; }
+      grid-row: 2 / 3;
+      position: relative;
+      top: -20px; }
   #section2 .photo-profil {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     position: relative;
-    top: 165px; } }
+    top: 17vh; } }
+@media only screen and (min-width: 1369px) {
+  #section2 content .p-item {
+    font-size: 19.2px; }
+  #section2 content .technologies {
+    top: 0; } }
+@media only screen and (min-width: 1441px) {
+  #section2 content {
+    padding: 3vh; }
+    #section2 content h2 {
+      margin: 20px 0 30px 0;
+      padding: 0 0 5px 0; }
+    #section2 content h4 {
+      margin: 10px 0;
+      padding: 0; } }
 
 /*# sourceMappingURL=profil.css.map */

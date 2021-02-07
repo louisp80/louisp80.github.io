@@ -15,7 +15,7 @@
 			position: relative;
 			display: inline-block;
 			margin: 20px 0 30px 0;
-			padding: 0 0 8px 0;
+			padding: 0 0 5px 0;
 		}
 		h2::before{
 			content: " ";
@@ -64,8 +64,10 @@
 		justify-content: center;
 		align-items: center;
 
+
 		width: 320px;
 		height: 320px;
+		
 		border-radius: 50%;
 		box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.35);
 
@@ -84,7 +86,7 @@
 		content{
 		width:100%;
 		margin: auto;
-		padding: 3vh;
+		padding: 2vh;
 		height: 100%;
 		display: grid;
 		grid-template-rows: 1fr 2fr;
@@ -93,16 +95,19 @@
 		align-items: start;
 
 			h2{
-				margin: 12px 0 20px 0;
+				margin: 6px 0 10px 0;
+				padding: 0;
 			}
 			h2::before{
 
 			}
 			h4{
 
+				margin: 0;
+
 			}
 			.p-item{
-				font-size: 18px;
+				font-size: 17px;
 				max-width: 600px;
 				margin: 0px;
 
@@ -150,7 +155,7 @@
 
 		content{
 		max-width: 1450px;
-		grid-template-rows: 5fr 6fr;
+		grid-template-rows: 5fr 10fr;
 		grid-template-columns: 3fr 2fr 3fr;
 
 			h2{
@@ -162,7 +167,6 @@
 
 			}
 			.p-item{
-				font-size: 19.2px;
 				max-width: 600px;
 
 				b{
@@ -176,6 +180,8 @@
 			.formation{
 				grid-column: 1 / 2;
 				grid-row: 2 / 3;
+				position: relative;
+				top: -70px;
 			}
 			.competences{
 				grid-column: 3 / 4;
@@ -185,6 +191,8 @@
 
 				grid-column: 3 / 4;
 				grid-row: 2 / 3;
+				position: relative;
+				top: -20px;
 				.p-desc{}
 				.tech-col{}
 			}
@@ -196,7 +204,90 @@
 			grid-column: 2 / 3;
 			grid-row: 1 / 2;
 			position: relative;
-			top: 165px;
+			top: 17vh;
+		}
+	}
+
+}
+@media only screen and (min-width:1369px){
+
+	#section2{
+
+		content{
+			h2{
+			}
+			h2::before{
+
+			}
+			h4{
+
+			}
+			.p-item{
+				font-size: 19.2px;
+
+				b{
+
+				}
+			}
+			.about{
+			}
+			.formation{
+			}
+			.competences{
+			}
+			.technologies{
+				top: 0;
+				.p-desc{}
+				.tech-col{}
+			}
+		}
+		.contenu-animation{
+		}
+
+		.photo-profil{
+		}
+	}
+
+}
+@media only screen and (min-width:1441px){
+
+	#section2{
+
+		content{
+			padding: 3vh;
+
+			h2{
+				margin: 20px 0 30px 0;
+				padding: 0 0 5px 0;
+			}
+			h2::before{
+
+			}
+			h4{
+				margin: 10px 0;
+				padding: 0;
+			}
+			.p-item{
+
+				b{
+
+				}
+			}
+			.about{
+			}
+			.formation{
+			}
+			.competences{
+			}
+			.technologies{
+				.p-desc{}
+				.tech-col{}
+			}
+		}
+		.contenu-animation{
+		}
+
+		.photo-profil{
 		}
 	}
 

@@ -37,8 +37,7 @@
     #section4 content .d-col-wrapper {
       display: flex;
       justify-content: center;
-      width: 100%;
-      overflow: hidden; }
+      width: 100%; }
       #section4 content .d-col-wrapper .col {
         width: 40%; }
       #section4 content .d-col-wrapper .gauche {

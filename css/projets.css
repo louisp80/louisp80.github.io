@@ -125,8 +125,8 @@
   #section3 content {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 11fr 1fr;
-    grid-template-rows: 4fr 570px 4fr;
+    grid-template-columns: 1fr 65vw 1fr;
+    grid-template-rows: 1fr 77vh 1fr;
     justify-items: center;
     align-items: center; }
   #section3 h1 {
@@ -198,8 +198,7 @@
         #section3 .projet .col .p-tech h4 {
           font-size: 1.3em; }
       #section3 .projet .col a {
-        justify-self: left;
-        align-self: start; }
+        right: 15px; }
     #section3 .projet .i1 {
       background-position: left top;
       background-size: cover; }
@@ -236,9 +235,10 @@
       transition: background 0.2s; }
     #section3 .page-counter .activeDot {
       background: #FFFFFF; } }
-@media only screen and (min-width: 1326px) {
+@media only screen and (min-width: 1441px) {
   #section3 content {
-    grid-template-columns: 1fr 1fr 1155px 1fr 1fr; }
+    grid-template-columns: 1fr 1fr 1155px 1fr 1fr;
+    grid-template-rows: 1fr 570px 1fr; }
   #section3 h1 {
     grid-column: 3 / 4; }
   #section3 .btn-left {
