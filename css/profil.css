@@ -3,68 +3,85 @@
 /*----------Mobile-----------*/
 @keyframes photo-profil {
   0% {
-    transform: scale(0); }
+    transform: scale(0);
+  }
   100% {
-    transform: scale(1); } }
+    transform: scale(1);
+  }
+}
 @keyframes contenu-translate {
   0% {
-    transform: translateY(300px); }
+    transform: translateY(300px);
+  }
   15% {
-    transform: translateY(300px); }
+    transform: translateY(300px);
+  }
   100% {
-    transform: translateY(0px); } }
+    transform: translateY(0px);
+  }
+}
 #section2 {
   background: none;
   text-align: center;
-  color: #39404d; }
-  #section2 content {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    align-items: center;
-    margin: auto; }
-    #section2 content h2 {
-      position: relative;
-      display: inline-block;
-      margin: 20px 0 30px 0;
-      padding: 0 0 5px 0; }
-    #section2 content h2::before {
-      content: " ";
-      position: absolute;
-      width: 80%;
-      height: 5px;
-      border-radius: 2.5px;
-      top: 100%;
-      left: 10%;
-      background: #2470E9; }
-    #section2 content h4 {
-      margin: 10px 0;
-      padding: 0; }
-    #section2 content .p-item {
-      font-size: 19.2px;
-      margin: 40px 0px; }
-      #section2 content .p-item b {
-        color: #5d636e; }
-    #section2 content .technologies .p-desc {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 12px 0; }
-    #section2 content .technologies .tech-col {
-      font-family: 'Fugaz One', Arial, Sans-Serif;
-      color: #5d636e;
-      line-height: 35px; }
-  #section2 .photo-profil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.35);
-    background: url("../medias/images/face-thumbnail_medium.png") no-repeat center center;
-    background-size: 100%;
-    transform: translateY(0px); }
+  color: #39404d;
+}
+#section2 content {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
+  margin: auto;
+}
+#section2 content h2 {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0 30px 0;
+  padding: 0 0 5px 0;
+}
+#section2 content h2::before {
+  content: " ";
+  position: absolute;
+  width: 80%;
+  height: 5px;
+  border-radius: 2.5px;
+  top: 100%;
+  left: 10%;
+  background: #2470E9;
+}
+#section2 content h4 {
+  margin: 10px 0;
+  padding: 0;
+}
+#section2 content .p-item {
+  font-size: 19.2px;
+  margin: 40px 0px;
+}
+#section2 content .p-item b {
+  color: #5d636e;
+}
+#section2 content .technologies .p-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 12px 0;
+}
+#section2 content .technologies .tech-col {
+  font-family: "Fugaz One", Arial, Sans-Serif;
+  color: #5d636e;
+  line-height: 35px;
+}
+#section2 .photo-profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.35);
+  background: url("../medias/images/face-thumbnail_medium.png") no-repeat center center;
+  background-size: 100%;
+  transform: translateY(0px);
+}
 
 @media only screen and (min-width: 900px) {
   #section2 content {
@@ -76,76 +93,102 @@
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    align-items: start; }
-    #section2 content h2 {
-      margin: 6px 0 10px 0;
-      padding: 0; }
-    #section2 content h4 {
-      margin: 0; }
-    #section2 content .p-item {
-      font-size: 17px;
-      max-width: 600px;
-      margin: 0px; }
-    #section2 content .about {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2; }
-    #section2 content .formation {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3; }
-    #section2 content .competences {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3; }
-    #section2 content .technologies {
-      grid-column: 3 / 4;
-      grid-row: 2 / 3; }
+    align-items: start;
+  }
+  #section2 content h2 {
+    margin: 6px 0 10px 0;
+    padding: 0;
+  }
+  #section2 content h4 {
+    margin: 0;
+  }
+  #section2 content .p-item {
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0px;
+  }
+  #section2 content .about {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  #section2 content .formation {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #section2 content .competences {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #section2 content .technologies {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
   #section2 .contenu-animation {
     animation-name: contenu-translate;
     animation-timing-function: ease-out;
-    animation-duration: 0.7s; }
+    animation-duration: 0.7s;
+  }
   #section2 .photo-profil {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2; } }
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
 @media only screen and (min-width: 1280px) {
   #section2 content {
     max-width: 1450px;
     grid-template-rows: 5fr 10fr;
-    grid-template-columns: 3fr 2fr 3fr; }
-    #section2 content .p-item {
-      max-width: 600px; }
-    #section2 content .about {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2; }
-    #section2 content .formation {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-      position: relative;
-      top: -70px; }
-    #section2 content .competences {
-      grid-column: 3 / 4;
-      grid-row: 1 / 2; }
-    #section2 content .technologies {
-      grid-column: 3 / 4;
-      grid-row: 2 / 3;
-      position: relative;
-      top: -20px; }
-  #section2 .photo-profil {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-template-columns: 3fr 2fr 3fr;
+  }
+  #section2 content .p-item {
+    max-width: 600px;
+  }
+  #section2 content .about {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #section2 content .formation {
+    grid-column: 1/2;
+    grid-row: 2/3;
     position: relative;
-    top: 17vh; } }
+    top: -70px;
+  }
+  #section2 content .competences {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  #section2 content .technologies {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    position: relative;
+    top: -20px;
+  }
+  #section2 .photo-profil {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position: relative;
+    top: 17vh;
+  }
+}
 @media only screen and (min-width: 1369px) {
   #section2 content .p-item {
-    font-size: 19.2px; }
+    font-size: 19.2px;
+  }
   #section2 content .technologies {
-    top: 0; } }
+    top: 0;
+  }
+}
 @media only screen and (min-width: 1441px) {
   #section2 content {
-    padding: 3vh; }
-    #section2 content h2 {
-      margin: 20px 0 30px 0;
-      padding: 0 0 5px 0; }
-    #section2 content h4 {
-      margin: 10px 0;
-      padding: 0; } }
+    padding: 3vh;
+  }
+  #section2 content h2 {
+    margin: 20px 0 30px 0;
+    padding: 0 0 5px 0;
+  }
+  #section2 content h4 {
+    margin: 10px 0;
+    padding: 0;
+  }
+}
 
 /*# sourceMappingURL=profil.css.map */

@@ -82,14 +82,17 @@
 						- HTML<br>
 						- CSS / Sass <br>
 						- Javascript <br>
-						- GSAP <br>
-						- Vue / Angular <br>
-						- Firebase
+						- Vue.js / Angular <br>
+						- Firebase<br>
+						- MongoDB <br>
+						- Mongoose <br>
 						
 					</div>
 					<div class="tech-col">
-						- MongoDB <br>
+						
+						- Node.js<br>
 						- Express.js <br>
+						- GSAP <br>
 						- Pug <br>
 						- Java <br>
 						- C# <br>
@@ -141,82 +144,36 @@
 					<div class="img-projet i1">
 					</div>
 					<div class="col">
-						<div class="p-desc">
-							<h3 class="s-titre">
-								monAgenda
-							</h3>
-							<div class="projet-txt">
-								<p>Il s'agit d'une application de bureau servant à planifier son quotidien. Elle est composée d'un calendrier qui permet d'insérer des tâches pour chaque jour, ainsi qu'un tableau de notes pour des citations, des aides-mémoires et autres courts-textes selon les désirs de l'utilisateur.</p>
-							</div>
-						</div>
-						<div class="p-fonc">
+						<h3 class="s-titre">
+							monAgenda - organisez votre emploi du temps
+						</h3>
+						<div class="desc-col">
 							<h4>Fonctionnalités</h4>
 							<ul>
-								<li>- Création d'un nouvel utilisateur et connection</li>
-								<li>- Créer, modifier et effacer une note</li>
-								<li>- Créer une tâche</li>
-								<li>- Modifier le contenu ou l'heure d'une tâche (appuyer sur la disquette pour enregistrer les modifications)</li>
-								<li>- Retirer une tâche (effacer le contenu d'une tâche et enregistrer les modifications)</li>
-								<li>- Afficher l'horaire de différentes journées (sélectionner une date dans le calendrier)</li>
+								<li>Création d'un nouvel utilisateur et connection grâce à Passport.js : Pour vous connecter immédiatement, utilisez "Guest" comme nom d'utilisateur et mot de passe.</li>
+								<li>Créer, modifier et effacer une note.</li>
+								<li>Créer une tâche.</li>
+								<li>Modifier le contenu d'une tâche : Appuyez sur la disquette pour enregistrer les modifications.</li>
+								<li>Retirer une tâche : Effacez le contenu d'une tâche et enregistrez les modifications.</li>
+								<li>Afficher l'horaire de différentes journées : Sélectionnez une date dans le calendrier.</li>
 							</ul>
 						</div>
-						<div class="p-tech">
+						<div class="desc-col">
 							<h4>Technologies utilisées</h4>
 							<ul>
-								<li>- HTML</li>
-								<li>- CSS / SASS</li>
-								<li>- JavaScript</li>
-								<li>- ExpressJs /<br>NodeJs</li>
-							</ul>
-							<ul>
-								<li>- Pug</li>
-								<li>- AJAX</li>
-								<li>- MongoDB /<br>Mongoose</li>
-								<li>- Heroku</li>
+								<li>HTML</li>
+								<li>Sass</li>
+								<li>Javascript</li>
+								<li>Express.js / Node.js</li>
+								<li>Pug</li>
+								<li>AJAX</li>
+								<li>MongoDB / Mongoose</li>
+								<li>Heroku</li>
 							</ul>
 
 						</div>
 						
-						<a class="btn" href="https://mon-agenda.herokuapp.com/dashboard" target="_blank">
-							Visiter le site
-						</a>
-					</div>
-				</div>
-				<div class="projet">
-					<div class="img-projet i2">
-						<div class="img-mask"></div>
-					</div>
-					<div class="col">
-						<div class="p-desc">
-							<h3 class="s-titre">
-								Yssa clothing store
-							</h3>
-							<div class="projet-txt">
-								<p>Yssa est une fausse boutique de vêtements en ligne. Elle permet de naviguer le catalgue, faire une recherche à l'aide de mots-clés, ajouter des articles au panier et se connecter en tant qu'administrateur pour faire des modifications au contenu du catalogue.</p>
-							</div>
-						</div>
-						<div class="p-fonc">
-							<h4>Fonctionnalités</h4>
-							<ul>
-								<li>- Choisir la taille et la quantité d'un article afin de l'ajouter au panier</li>
-								<li>- Rechercher des articles à l'aide de mots-clés</li>
-								<li>- Modifier la quantité d'articles dans le panier. La facture sera mise à jour en temps réel</li>
-								<li>- Se connecter en tant qu'administrateur</li>
-								<li>- Modifier le nom et le prix d'un article du catalogue</li>
-								<li>- Ajouter un article au catalogue</li>
-								<li>- Retirer un article du catalogue</li>
-							</ul>
-						</div>
-						<div class="p-tech">
-							<h4>Technologies utilisées</h4>
-							<ul>
-								<li>- HTML</li>
-								<li>- CSS / SASS</li>
-								<li>- Angular 5</li>
-								<li>- TypeScript</li>
-							</ul>
-						</div>
-						<a class="btn" href="http://yssamock.store/" target="_blank">
+						<a class="btn visiter-btn" href="https://mon-agenda.herokuapp.com/dashboard" target="_blank">
 							Visiter le site
 						</a>
 					</div>
@@ -226,28 +183,70 @@
 						<div class="img-mask"></div>
 					</div>
 					<div class="col">
-						<div class="p-desc">
-							<h3 class="s-titre">
-								Simulateur de lotterie NHL
-							</h3>
-							<div class="projet-txt">
-								<p>Dans le cadre d'une ligue de hockey simulée à laquelle j'ai participé, j'ai voulu que nous puissions effectuer notre propre lotterie du repêchage, plutôt que d'utiliser les résultats de la LNH. Cette lotterie fonctionne selon les mêmes règles.</p>
-							</div>
-						</div>
-						<div class="p-fonc">
-							<h4>Fonctionnement</h4>
-							<p>À la fin d'une saison de la SHL, les équipes ayant le moins bien repêché obtiennent de meilleures probabilités de choisir dans le top 3 en vue du prochain repêchage. Cette application effectue le tirage au sort en dévoilant les trois premières positions de manière successive. Il est de plus possible d'enregistrer le résultat final dans un fichier .txt.</p>
-						</div>
-						<div class="p-tech">
-							<h4>Technologies utilisées</h4>
+						<h3 class="s-titre">
+							Free games finder - index de jeux gratuits
+						</h3>
+						<div class="desc-col">
+							<h4>Fonctionnalités</h4>
 							<ul>
-								<li>- HTML</li>
-								<li>- CSS</li>
-								<li>- Javascript</li>
-								<li>- GitHub pages</li>
+								<li>Classer les jeux par catégorie.</li>
+								<li>Classer les jeux par plateforme.</li>
+								<li>Filtrer les jeux selon des mots-clés (tags).</li>
+								<li>Ordonner les jeux affichés selon la date de sortie, par ordre alphabétique ou par pertinence.</li>
+								<li>Afficher les détails d'un jeu : Cliquez sur le jeu pour en apprendre davantage, visionner des captures d'écran et visiter le site original du jeu.</li>
+								<li>100% responsive.</li>
+
 							</ul>
 						</div>
-						<a class="btn" href="https://louisp80.github.io/repechageSHL/" target="_blank">
+						<div class="desc-col">
+							<h4>Technologies utilisées</h4>
+							<ul>
+								<li>HTML</li>
+								<li>Sass</li>
+								<li>Vue.js</li>
+								<li>Express.js</li>
+								<li><a href="https://www.freetogame.com/api-doc" target="_blank">Free-to-game API<a></li>
+								<li>Heroku</li>
+							</ul>
+						</div>
+						<a class="btn visiter-btn" href="https://free-games-finder.herokuapp.com/#/" target="_blank">
+							Visiter le site
+						</a>
+					</div>
+				</div>
+				<div class="projet">
+					<div class="img-projet i2">
+						<div class="img-mask"></div>
+					</div>
+					<div class="col">
+						<h3 class="s-titre">
+							Yssa clothing - boutique de vêtements en ligne
+						</h3>
+						<div class="desc-col">
+							<h4>Fonctionnalités</h4>
+							<ul>
+								<li>Rechercher des articles à l'aide de mots-clés.</li>
+								<li>Ajouter des articles au panier.</li>
+								<li>Sur la page d'un article, choisir la taille et la quantité à ajouter au panier.</li>
+								<li>Afficher le panier; modifier la quantité désirée d'un article.</li>
+								<li>Se connecter en tant qu'administrateur et accéder au CMS.</li>
+								<li>Modifier le nom et le prix d'un article du catalogue.</li>
+								<li>Ajouter un article au catalogue.</li>
+								<li>Retirer un article du catalogue.</li>
+								<li>100% responsive.</li>
+							</ul>
+						</div>
+						<div class="desc-col">
+							<h4>Technologies utilisées</h4>
+							<ul>
+								<li>HTML</li>
+								<li>Sass</li>
+								<li>Angular 5</li>
+								<li>TypeScript</li>
+								<li>Heroku</li>
+							</ul>
+						</div>
+						<a class="btn visiter-btn" href="https://yssa-clothing.herokuapp.com/" target="_blank">
 							Visiter le site
 						</a>
 					</div>
